@@ -12,7 +12,6 @@ A GitHub Pages-ready portfolio project that estimates total group-stage air trav
 - Calculates match-by-match travel distance in kilometers.
 - Aggregates total travel distance per team.
 - Writes a precomputed JSON file for the static frontend in `docs/`.
-- Presents the project through a Jekyll-powered portfolio shell using the `vaibhavvikas/jekyll-theme-minimalistic` theme.
 
 ## Repo layout
 
