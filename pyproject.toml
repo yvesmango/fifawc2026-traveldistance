@@ -1,0 +1,20 @@
+[project]
+name = "worldcup2026-traveldistance"
+version = "0.1.0"
+description = "FIFA World Cup 2026 team travel distance dashboard"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.2",
+  "geopy>=2.4",
+  "airports-py>=0.0.0",
+]
+
+[project.scripts]
+process-travel-data = "scripts.process_data:main"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

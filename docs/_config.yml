@@ -1,0 +1,22 @@
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+color-scheme: light
+
+title: FIFA World Cup 2026 Travel Distance Dashboard
+description: >-
+  A portfolio project that estimates group-stage air travel distance for each national team
+  by combining training-site geocoding, airport proximity, and match venue geography.
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+
+navigation:
+  - name: Overview
+    link: ./index.html
+  - name: Dashboard
+    link: ./dashboard.html
+  - name: Methodology
+    link: ./methodology.html
+  - name: Python Pipeline
+    link: ./process.html
