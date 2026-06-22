@@ -12,8 +12,9 @@ plugins:
 navigation:
   - name: Read me
     link: ./index.html
-    link: ./docs/dashboard.md
+  - name: Dashboard
+    link: ./dashboard.html
   - name: Methodology
-    link: ./docs/methodology.md
+    link: ./methodology.html
   - name: Python Script
-    link: ./docs/process.md
+    link: ./process.html

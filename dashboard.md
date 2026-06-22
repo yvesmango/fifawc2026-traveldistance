@@ -3,22 +3,21 @@ layout: default
 title: Dashboard | FIFA World Cup 2026 Travel Distance Dashboard
 description: Interactive chart of estimated group-stage air travel distance by national team.
 ---
-<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
+
+<link rel="stylesheet" href="{{ '/docs/css/style.css' | relative_url }}" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
-  window.TRAVEL_DISTANCE_DATA_URL = "{{ '/data/travel_distances.json' | relative_url }}";
+  window.TRAVEL_DISTANCE_DATA_URL = "{{ '/docs/data/travel_distances.json' | relative_url }}";
 </script>
-<script src="{{ '/js/chart.js' | relative_url }}" defer></script>
-<script src="{{ '/js/main.js' | relative_url }}" defer></script>
+<script src="{{ '/docs/js/chart.js' | relative_url }}" defer></script>
+<script src="{{ '/docs/js/main.js' | relative_url }}" defer></script>
+
+# Team travel distance by group stage
+
+The chart ranks all 48 teams by total estimated group-stage air travel distance. Each bar is the sum of the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
 
 <div class="page-shell dashboard-page">
   <section class="hero">
-    <div class="eyebrow">Interactive dashboard</div>
-    <h1>Team travel distance by group stage</h1>
-    <p class="lede">
-      The chart ranks all 48 teams by total estimated group-stage air travel distance. Each bar is the sum
-      of the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
-    </p>
     <div class="meta-row" aria-live="polite">
       <div class="meta-card">
         <span class="meta-label">Teams</span>

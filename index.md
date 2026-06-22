@@ -34,7 +34,7 @@ The analysis uses each team&apos;s training site as the origin point, then maps 
 - [Dashboard](./dashboard.html)
 - [Methodology](./methodology.html)
 - [Python script](./process.html)
-- Generated JSON used by the chart: `docs/data/travel_distances.json`
+- Generated JSON used by the chart: [docs/data/travel_distances.json](./docs/data/travel_distances.json)
 
 ## Technologies Used
 
