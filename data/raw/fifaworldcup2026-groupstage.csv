@@ -1,0 +1,73 @@
+Match,Date,Time (ET),Time (Local),Team 1,Team 2,Group,Venue,City
+1,11-Jun-26,15:00,13:00,Mexico,South Africa,A,Estadio Azteca,Mexico City
+2,11-Jun-26,22:00,20:00,South Korea,Czechia,A,Estadio Akron,Guadalajara
+3,12-Jun-26,15:00,15:00,Canada,Bosnia and Herzegovina,B,BMO Field,Toronto
+4,12-Jun-26,21:00,18:00,USA,Paraguay,D,SoFi Stadium,Los Angeles
+5,13-Jun-26,21:00,21:00,Haiti,Scotland,C,Gillette Stadium,Boston
+6,13-Jun-26,24:00:00,21:00,Australia,Türkiye,D,BC Place,Vancouver
+7,13-Jun-26,18:00,18:00,Brazil,Morocco,C,MetLife Stadium,New York/New Jersey
+8,13-Jun-26,15:00,12:00,Qatar,Switzerland,B,Levi's Stadium,San Francisco Bay Area
+9,14-Jun-26,19:00,19:00,Ivory Coast,Ecuador,E,Lincoln Financial Field,Philadelphia
+10,14-Jun-26,13:00,12:00,Germany,Curaçao,E,NRG Stadium,Houston
+11,14-Jun-26,16:00,15:00,Netherlands,Japan,F,AT&T Stadium,Dallas
+12,14-Jun-26,22:00,20:00,Sweden,Tunisia,F,Estadio BBVA,Monterrey
+13,15-Jun-26,18:00,18:00,Saudi Arabia,Uruguay,H,Hard Rock Stadium,Miami
+14,15-Jun-26,12:00,12:00,Spain,Cape Verde,H,Mercedes-Benz Stadium,Atlanta
+15,15-Jun-26,21:00,18:00,Iran,New Zealand,G,SoFi Stadium,Los Angeles
+16,15-Jun-26,15:00,12:00,Belgium,Egypt,G,Lumen Field,Seattle
+17,16-Jun-26,15:00,15:00,France,Senegal,I,MetLife Stadium,New York/New Jersey
+18,16-Jun-26,18:00,18:00,Iraq,Norway,I,Gillette Stadium,Boston
+19,16-Jun-26,21:00,20:00,Argentina,Algeria,J,Arrowhead Stadium,Kansas City
+20,16-Jun-26,24:00:00,21:00,Austria,Jordan,J,Levi's Stadium,San Francisco Bay Area
+21,17-Jun-26,19:00,19:00,Ghana,Panama,L,BMO Field,Toronto
+22,17-Jun-26,16:00,15:00,England,Croatia,L,AT&T Stadium,Dallas
+23,17-Jun-26,13:00,12:00,Portugal,Congo DR,K,NRG Stadium,Houston
+24,17-Jun-26,22:00,20:00,Uzbekistan,Colombia,K,Estadio Azteca,Mexico City
+25,18-Jun-26,12:00,12:00,Czechia,South Africa,A,Mercedes-Benz Stadium,Atlanta
+26,18-Jun-26,15:00,12:00,Switzerland,Bosnia and Herzegovina,B,SoFi Stadium,Los Angeles
+27,18-Jun-26,18:00,15:00,Canada,Qatar,B,BC Place,Vancouver
+28,18-Jun-26,21:00,19:00,Mexico,South Korea,A,Estadio Akron,Guadalajara
+29,19-Jun-26,21:00,21:00,Brazil,Haiti,C,Lincoln Financial Field,Philadelphia
+30,19-Jun-26,18:00,18:00,Scotland,Morocco,C,Gillette Stadium,Boston
+31,19-Jun-26,23:00,20:00,Türkiye,Paraguay,D,Levi's Stadium,San Francisco Bay Area
+32,19-Jun-26,15:00,12:00,USA,Australia,D,Lumen Field,Seattle
+33,20-Jun-26,16:00,16:00,Germany,Ivory Coast,E,BMO Field,Toronto
+34,20-Jun-26,20:00,19:00,Ecuador,Curaçao,E,Arrowhead Stadium,Kansas City
+35,20-Jun-26,13:00,12:00,Netherlands,Sweden,F,NRG Stadium,Houston
+36,20-Jun-26,24:00:00,22:00,Tunisia,Japan,F,Estadio BBVA,Monterrey
+37,21-Jun-26,18:00,18:00,Uruguay,Cape Verde,H,Hard Rock Stadium,Miami
+38,21-Jun-26,12:00,12:00,Spain,Saudi Arabia,H,Mercedes-Benz Stadium,Atlanta
+39,21-Jun-26,15:00,12:00,Belgium,Iran,G,SoFi Stadium,Los Angeles
+40,21-Jun-26,21:00,18:00,New Zealand,Egypt,G,BC Place,Vancouver
+41,22-Jun-26,20:00,20:00,Norway,Senegal,I,MetLife Stadium,New York/New Jersey
+42,22-Jun-26,17:00,17:00,France,Iraq,I,Lincoln Financial Field,Philadelphia
+43,22-Jun-26,13:00,12:00,Argentina,Austria,J,AT&T Stadium,Dallas
+44,22-Jun-26,23:00,20:00,Jordan,Algeria,J,Levi's Stadium,San Francisco Bay Area
+45,23-Jun-26,16:00,16:00,England,Ghana,L,Gillette Stadium,Boston
+46,23-Jun-26,19:00,19:00,Panama,Croatia,L,BMO Field,Toronto
+47,23-Jun-26,13:00,12:00,Portugal,Uzbekistan,K,NRG Stadium,Houston
+48,23-Jun-26,22:00,20:00,Colombia,Congo DR,K,Estadio Akron,Guadalajara
+49,24-Jun-26,18:00,18:00,Scotland,Brazil,C,Hard Rock Stadium,Miami
+50,24-Jun-26,18:00,18:00,Morocco,Haiti,C,Mercedes-Benz Stadium,Atlanta
+51,24-Jun-26,15:00,12:00,Switzerland,Canada,B,BC Place,Vancouver
+52,24-Jun-26,15:00,12:00,Bosnia and Herzegovina,Qatar,B,Lumen Field,Seattle
+53,24-Jun-26,21:00,19:00,Czechia,Mexico,A,Estadio Azteca,Mexico City
+54,24-Jun-26,21:00,19:00,South Africa,South Korea,A,Estadio BBVA,Monterrey
+55,25-Jun-26,16:00,16:00,Curaçao,Ivory Coast,E,Lincoln Financial Field,Philadelphia
+56,25-Jun-26,16:00,16:00,Ecuador,Germany,E,MetLife Stadium,New York/New Jersey
+57,25-Jun-26,19:00,18:00,Japan,Sweden,F,AT&T Stadium,Dallas
+58,25-Jun-26,19:00,18:00,Tunisia,Netherlands,F,Arrowhead Stadium,Kansas City
+59,25-Jun-26,22:00,19:00,Türkiye,USA,D,SoFi Stadium,Los Angeles
+60,25-Jun-26,22:00,19:00,Paraguay,Australia,D,Levi's Stadium,San Francisco Bay Area
+61,26-Jun-26,15:00,15:00,Norway,France,I,Gillette Stadium,Boston
+62,26-Jun-26,15:00,15:00,Senegal,Iraq,I,BMO Field,Toronto
+63,26-Jun-26,23:00,20:00,Egypt,Iran,G,Lumen Field,Seattle
+64,26-Jun-26,23:00,20:00,New Zealand,Belgium,G,BC Place,Vancouver
+65,26-Jun-26,20:00,19:00,Cape Verde,Saudi Arabia,H,NRG Stadium,Houston
+66,26-Jun-26,20:00,18:00,Uruguay,Spain,H,Estadio Akron,Guadalajara
+67,27-Jun-26,17:00,17:00,Panama,England,L,MetLife Stadium,New York/New Jersey
+68,27-Jun-26,17:00,17:00,Croatia,Ghana,L,Lincoln Financial Field,Philadelphia
+69,27-Jun-26,22:00,21:00,Algeria,Austria,J,Arrowhead Stadium,Kansas City
+70,27-Jun-26,22:00,21:00,Jordan,Argentina,J,AT&T Stadium,Dallas
+71,27-Jun-26,19:30,19:30,Colombia,Portugal,K,Hard Rock Stadium,Miami
+72,27-Jun-26,19:30,19:30,Congo DR,Uzbekistan,K,Mercedes-Benz Stadium,Atlanta
