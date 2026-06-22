@@ -1,6 +1,6 @@
 # FIFA World Cup 2026 Travel Distance Dashboard
 
-A GitHub Pages-ready portfolio project that estimates total group-stage air travel distance for each 2026 World Cup national team. The site now uses a Jekyll shell in `docs/` with an overview page, a dashboard page, and a methodology/process companion.
+A GitHub Pages-ready portfolio project that estimates total group-stage air travel distance for each 2026 World Cup national team. The site now uses a Jekyll shell in `docs/` with Markdown pages for the overview, dashboard, methodology, and pipeline write-up.
 
 ## What it does
 
@@ -25,10 +25,10 @@ worldcup2026-traveldistance/
 │   ├── _config.yml
 │   ├── css/
 │   ├── data/
-│   ├── dashboard.html
-│   ├── index.html
-│   ├── methodology.html
-│   ├── process.html
+│   ├── dashboard.md
+│   ├── index.md
+│   ├── methodology.md
+│   ├── process.md
 │   └── js/
 ├── scripts/
 ├── pyproject.toml
@@ -109,7 +109,7 @@ GitHub Pages should publish from the `docs/` folder.
 1. Generate the JSON.
 2. Commit the source files and generated JSON.
 3. Enable GitHub Pages for the repository and point it at the `docs/` folder.
-4. GitHub Pages will render the Jekyll theme from `docs/_config.yml`.
+4. GitHub Pages will render the Jekyll theme from `docs/_config.yml` and the Markdown content pages in `docs/`.
 
 ## Reproduction checklist
 
