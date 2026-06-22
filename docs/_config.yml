@@ -2,7 +2,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: light
 
 title: FIFA World Cup 2026 Travel Distance Dashboard
-description: Estimating 2026 World Cup group-stage travel distances using training-site geocoding and airport proximity.
+description: Estimating 2026 World Cup group-stage travel distances between team training sites and match venues.
 
 plugins:
   - jekyll-sitemap
@@ -11,10 +11,10 @@ plugins:
 
 navigation:
   - name: Read me
-    link: ./index.html
+    link: ./index.md
   - name: Dashboard
-    link: ./dashboard.html
+    link: ./dashboard.md
   - name: Methodology
-    link: ./methodology.html
+    link: ./methodology.md
   - name: Python Script
-    link: ./process.html
+    link: ./process.md
