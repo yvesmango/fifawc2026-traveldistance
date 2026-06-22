@@ -1,98 +1,41 @@
 ---
 layout: default
 title: FIFA World Cup 2026 Travel Distance Dashboard
-description: Overview of a portfolio project that estimates group-stage air travel distance for each national team.
+description: Project overview and links to the dashboard, methodology, and Python pipeline.
 ---
-<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
-<div class="page-shell portfolio-page">
-  <section class="hero portfolio-hero">
-    <div class="eyebrow">Portfolio Project</div>
-    <h1>Travel distance, turned into a clean story.</h1>
-    <p class="lede">
-      This project estimates how far each national team is likely to travel during the FIFA World Cup
-      2026 group stage by combining training-site geocoding, airport proximity, and match venue geography.
-      The result is a fast, static dashboard backed by a precomputed JSON file.
-    </p>
 
-    <div class="meta-row" aria-label="Project highlights">
-      <div class="meta-card">
-        <span class="meta-label">Teams modeled</span>
-        <strong>48 national teams</strong>
-      </div>
-      <div class="meta-card">
-        <span class="meta-label">Pipeline</span>
-        <strong>Python 3.11 + uv</strong>
-      </div>
-      <div class="meta-card">
-        <span class="meta-label">Deployment</span>
-        <strong>GitHub Pages</strong>
-      </div>
-    </div>
+# FIFA World Cup 2026 Travel Distance Dashboard
 
-    <div class="cta-row">
-      <a class="button-primary" href="{{ '/dashboard.html' | relative_url }}">Open dashboard</a>
-      <a class="button-secondary" href="{{ '/methodology.html' | relative_url }}">Read methodology</a>
-      <a class="button-secondary" href="{{ '/process.html' | relative_url }}">See Python pipeline</a>
-    </div>
-  </section>
+**Goal**: Estimate total group-stage air travel distance for each 2026 World Cup national team.
 
-  <section class="content-grid" aria-label="Project summary">
-    <article class="panel feature-card">
-      <div class="eyebrow eyebrow-inline">What it shows</div>
-      <h2>Total group-stage travel distance by team</h2>
-      <p>
-        The dashboard ranks every team from highest to lowest estimated air travel distance, making the
-        travel burden immediately comparable across the full field.
-      </p>
-    </article>
+This project combines training-site geocoding, airport proximity, and match venue geography to produce a precomputed dataset for a static GitHub Pages dashboard.
 
-    <article class="panel feature-card">
-      <div class="eyebrow eyebrow-inline">Why it matters</div>
-      <h2>Training sites, not just cities</h2>
-      <p>
-        Using each team&apos;s training base instead of its listed city gives a more precise origin point and
-        better reflects the travel pattern a squad actually faces.
-      </p>
-    </article>
+## Introduction
 
-    <article class="panel feature-card">
-      <div class="eyebrow eyebrow-inline">How it works</div>
-      <h2>Precompute once, serve statically</h2>
-      <p>
-        A Python script geocodes the training sites, finds nearby airports, and writes a small JSON payload
-        that the frontend can load instantly without any server-side processing.
-      </p>
-    </article>
-  </section>
+The analysis uses each team&apos;s training site as the origin point, then maps that site and each venue to nearby commercial airports. The result is a simple ranking of which teams are expected to travel the most during the group stage.
 
-  <section class="panel callout-panel">
-    <div class="panel-header">
-      <div>
-        <h2>Explore the project</h2>
-        <p>
-          The pages below split the portfolio into a short narrative, the interactive dashboard, and the
-          methodology/process notes.
-        </p>
-      </div>
-    </div>
+## Data Sources
 
-    <div class="link-grid">
-      <a class="link-card" href="{{ '/dashboard.html' | relative_url }}">
-        <span class="link-title">Dashboard</span>
-        <span class="link-text">View the descending horizontal bar chart and summary table.</span>
-      </a>
-      <a class="link-card" href="{{ '/methodology.html' | relative_url }}">
-        <span class="link-title">Methodology</span>
-        <span class="link-text">Read how geocoding, airport mapping, and distance calculations work.</span>
-      </a>
-      <a class="link-card" href="{{ '/process.html' | relative_url }}">
-        <span class="link-title">Python Pipeline</span>
-        <span class="link-text">See the data-processing workflow and reproduction steps.</span>
-      </a>
-      <a class="link-card" href="https://github.com/yvesmango/worldcup2026-traveldistance" target="_blank" rel="noreferrer">
-        <span class="link-title">Repository</span>
-        <span class="link-text">Open the source code and generated assets on GitHub.</span>
-      </a>
-    </div>
-  </section>
-</div>
+- Group stage schedule exported from Google Sheets
+- Team origin data with training-site locations exported from Google Sheets
+- Airport lookup data used for nearest-airport matching
+
+## Methodology
+
+1. Load the two CSV exports with Python and pandas.
+2. Normalize team names, including Cape Verde and Cabo Verde.
+3. Geocode each unique training site with geopy and Nominatim.
+4. Find the nearest valid commercial airport with airports-py.
+5. Resolve venues to destination airports, using a city-level fallback when needed.
+6. Calculate airport-to-airport distances in kilometers and aggregate the totals by team.
+
+## Outputs
+
+- [Dashboard](./dashboard.html)
+- [Methodology](./methodology.html)
+- [Python script](./process.html)
+- Generated JSON used by the chart: `docs/data/travel_distances.json`
+
+## Technologies Used
+
+`Python`, `pandas`, `geopy`, `airports-py`, `Chart.js`, `Jekyll`
