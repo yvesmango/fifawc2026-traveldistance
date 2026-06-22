@@ -11,8 +11,7 @@ plugins:
 
 navigation:
   - name: Read me
-    link: ./docs/index.md
-  - name: Dashboard
+    link: ./index.html
     link: ./docs/dashboard.md
   - name: Methodology
     link: ./docs/methodology.md
