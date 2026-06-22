@@ -11,10 +11,10 @@ plugins:
 
 navigation:
   - name: Read me
-    link: ./index.md
+    link: ./docs/index.md
   - name: Dashboard
-    link: ./dashboard.md
+    link: ./docs/dashboard.md
   - name: Methodology
-    link: ./methodology.md
+    link: ./docs/methodology.md
   - name: Python Script
-    link: ./process.md
+    link: ./docs/process.md
