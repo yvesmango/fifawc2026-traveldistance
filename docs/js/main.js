@@ -64,7 +64,7 @@
   }
 
   function formatFlightTimeEquivalent(distanceKm) {
-    const totalMinutes = Math.round(((distanceKm * 2) / FLIGHT_SPEED_KMH) * 60);
+    const totalMinutes = Math.round((distanceKm / FLIGHT_SPEED_KMH) * 60);
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
     if (hours === 0) {

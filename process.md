@@ -15,7 +15,7 @@ The processing script is the single source of truth for the dataset.
 - Standardizes team names
 - Geocodes training sites
 - Finds nearby commercial airports
-- Calculates total air travel distance per team
+- Calculates total one-way air travel distance per team
 - Writes `data/processed/travel_distances.json`
 - Copies the same payload to `docs/data/travel_distances.json`
 
@@ -30,7 +30,7 @@ uv run python scripts/process_data.py
 The JSON includes:
 
 - team name
-- total distance in kilometers
+- total one-way distance in kilometers
 - matches counted
 - generation timestamp
 - short methodology note

@@ -8,7 +8,7 @@ description: Brief topline summary of the air travel ranking and its key takeawa
 
 This analysis answers a simple question: which national team had to travel the most by air to reach its 2026 World Cup group-stage matches? The short answer is South Africa, and the wider pattern is just as telling. The top of the table is dominated by long-haul travel and repeated venue hops, while the bottom of the table shows how much easier the tournament becomes when training sites and match venues sit closer together.
 
-**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent doubles that total and divides by 900 km/h to approximate round-trip time in the air.
+**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent uses that same one-way distance total and converts it at 900 km/h to give an in-air time estimate.
 
 ## Top 5
 
