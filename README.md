@@ -22,12 +22,10 @@ This project combines training-site geocoding with airport proximity mapping to 
 
 ## Outputs
 
-- [Dashboard](./dashboard.html)
-- [Executive Summary](./executive-summary.html)
-- [Python script](./scripts/process_data.py)
-- Generated JSON: `docs/data/travel_distances.json`
+- [Dashboard](https://yvesmango.github.io/fifawc2026-traveldistance/dashboard)
+- [Executive Summary](.https://yvesmango.github.io/fifawc2026-traveldistance/executive-summary)
+- [Python script](./scripts/https://yvesmango.github.io/fifawc2026-traveldistance/process)
 
 ## Packages Used
 
 `pandas`, `geopy`, `airports-py`, `Chart.js`,
-

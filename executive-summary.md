@@ -31,3 +31,9 @@ These teams face a far lighter travel load. The bottom two are separated by only
 ## So What?
 
 The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of long flight legs across a continent. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard.
+
+## Static Export
+
+A high-resolution PNG version of the chart is available for social sharing:
+
+- [Download chart PNG](./assets/travel-distance-chart.png)
