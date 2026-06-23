@@ -2,7 +2,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: light
 
 title: Which national team has to fly the most to their games?
-description: Estimating 2026 World Cup group-stage air travel distances between team training sites and match venues.
+description: Estimating round-trip air travel distances for 2026 World Cup group-stage matches between team training camps and match venues.
 
 plugins:
   - jekyll-sitemap
