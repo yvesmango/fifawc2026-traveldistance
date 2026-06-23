@@ -54,6 +54,76 @@ TEAM_ALIASES = {
     "usa (us)": "United States",
 }
 
+TRAINING_SITE_AIRPORT_OVERRIDES = {
+    "academia atlas fc": "GDL",
+    "arizona athletic grounds": "PHX",
+    "atlanta united training centre": "ATL",
+    "austin fc stadium": "AUS",
+    "baylor school": "CHA",
+    "bentley university": "BOS",
+    "bryant university": "PVD",
+    "cf pachuca - universidad del futbol": "NLU",
+    "centro xoloitzcuintle": "TIJ",
+    "centro de alto rendimiento (car)": "MEX",
+    "charlotte fc": "CLT",
+    "chivas verde valle": "GDL",
+    "columbia park training facility": "EWR",
+    "columbus crew performance centre": "CMH",
+    "episcopal high school": "DCA",
+    "fc dallas stadium": "DFW",
+    "florida atlantic university": "FLL",
+    "gardens north county district park": "PBI",
+    "gonzaga university": "GEG",
+    "great park sports complex": "SNA",
+    "houston training centre": "IAH",
+    "kc current training facility": "MCI",
+    "mansfield multipurpose stadium": "DFW",
+    "mayakoba training centre cancun": "CUN",
+    "nashville sc": "BNA",
+    "national soccer development centre": "YVR",
+    "nottawasaga training site": "YYZ",
+    "oakland roots/soul training facility": "OAK",
+    "philadelphia union": "PHL",
+    "rsl stadium": "SLC",
+    "rayados training centre": "MTY",
+    "rutgers university": "EWR",
+    "sdja": "SAN",
+    "seattle sounders fc performance centre and clubhouse": "SEA",
+    "spartan soccer complex": "SJC",
+    "sporting kc training centre": "MCI",
+    "stockton university": "ACY",
+    "swope soccer village": "MCI",
+    "the greenbrier sports performance centre": "LWB",
+    "the pingry school": "EWR",
+    "uc santa barbara - harder stadium": "SBA",
+    "unc greensboro": "GSO",
+    "university of kansas": "MCI",
+    "university of portland": "PDX",
+    "university of san diego - torero stadium": "SAN",
+    "wake forest university": "GSO",
+    "waters sportsplex": "TPA",
+    "westmont college": "SBA",
+}
+
+VENUE_CITY_AIRPORT_OVERRIDES = {
+    "atlanta": "ATL",
+    "boston": "BOS",
+    "dallas": "DFW",
+    "guadalajara": "GDL",
+    "houston": "IAH",
+    "kansas city": "MCI",
+    "los angeles": "LAX",
+    "miami": "MIA",
+    "mexico city": "MEX",
+    "monterrey": "MTY",
+    "new york/new jersey": "EWR",
+    "philadelphia": "PHL",
+    "san francisco bay area": "SFO",
+    "seattle": "SEA",
+    "toronto": "YYZ",
+    "vancouver": "YVR",
+}
+
 
 def configure_logging() -> None:
     logging.basicConfig(
@@ -431,12 +501,14 @@ def lookup_airport_with_cache(
     cache_key: str,
     label: str,
     candidates: list[str] | None = None,
+    airport_code: str | None = None,
 ) -> AirportLookup | None:
     if cache_key in cache:
         return cache[cache_key]
-    if coords is None:
-        airport = None
-    else:
+    airport = None
+    if airport_code:
+        airport = backend.lookup_airport(airport_code)
+    if airport is None and coords is not None:
         airport = backend.find_nearest_airport(coords[0], coords[1], filters=AIRPORT_FILTERS)
     if airport is None and candidates:
         airport = lookup_airport_by_text(backend, candidates)
@@ -481,6 +553,8 @@ def lookup_airport_by_text(backend: AirportBackend, candidates: list[str]) -> Ai
                     score += 8.0
                 if name and token in name:
                     score += 6.0
+            if score <= 0:
+                continue
             if airport_type == "large_airport":
                 score += 10.0
             if score > best_score:
@@ -534,6 +608,7 @@ def build_team_origin_lookup(
             geo_cache,
             f"training site for {team}",
         )
+        airport_code = TRAINING_SITE_AIRPORT_OVERRIDES.get(training_site.lower()) or TRAINING_SITE_AIRPORT_OVERRIDES.get(city.lower())
         airport = lookup_airport_with_cache(
             airport_backend,
             coords,
@@ -541,6 +616,7 @@ def build_team_origin_lookup(
             f"training:{cache_key}",
             f"training site for {team}",
             training_site_candidates(pd.Series({"training_site": training_site, "city": city, "team": team})),
+            airport_code=airport_code,
         )
         if airport:
             lookup[team] = TeamOrigin(training_site=training_site, airport=airport)
@@ -559,6 +635,7 @@ def build_venue_lookup(
 
     for _, row in matches.iterrows():
         city = normalize_location_text(row.get("city"))
+        city_code = VENUE_CITY_AIRPORT_OVERRIDES.get(city.lower())
         for candidate in venue_candidates(row):
             key = candidate.lower()
             if key in lookup:
@@ -577,6 +654,7 @@ def build_venue_lookup(
                 f"venue:{candidate.lower()}|{city.lower()}",
                 f"venue {candidate}",
                 [candidate, city],
+                airport_code=city_code,
             )
             if airport:
                 lookup[key] = airport

@@ -8,6 +8,7 @@ dependencies = [
   "pandas>=2.2",
   "geopy>=2.4",
   "airports-py>=0.0.0",
+  "pillow>=12.2.0",
 ]
 
 [project.scripts]

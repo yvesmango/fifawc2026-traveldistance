@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T05:56:42.358481Z",
+    "generated_at": "2026-06-23T06:10:01.063122Z",
     "dataset_type": "processed",
     "methodology": "Travel distance is the sum of great-circle distances between each team's nearest commercial airport to its training site and the nearest commercial airport to each match venue.",
     "teams_processed": 48,
@@ -10,213 +10,39 @@
   },
   "teams": [
     {
-      "team": "Norway",
-      "training_site": "UNC Greensboro",
-      "total_distance_km": 31696,
-      "matches_count": 3
-    },
-    {
-      "team": "Haiti",
-      "training_site": "Stockton University",
-      "total_distance_km": 25226,
-      "matches_count": 3
-    },
-    {
-      "team": "Germany",
-      "training_site": "Wake Forest University",
-      "total_distance_km": 25035,
-      "matches_count": 3
-    },
-    {
-      "team": "Iraq",
-      "training_site": "The Greenbrier Sports Performance Centre",
-      "total_distance_km": 23829,
-      "matches_count": 3
-    },
-    {
-      "team": "Jordan",
-      "training_site": "University of Portland",
-      "total_distance_km": 18884,
-      "matches_count": 3
-    },
-    {
-      "team": "Panama",
-      "training_site": "Nottawasaga Training Site",
-      "total_distance_km": 17900,
-      "matches_count": 3
-    },
-    {
-      "team": "Morocco",
-      "training_site": "The Pingry School",
-      "total_distance_km": 16771,
-      "matches_count": 3
-    },
-    {
-      "team": "Australia",
-      "training_site": "Oakland Roots/Soul Training Facility",
-      "total_distance_km": 16683,
-      "matches_count": 3
-    },
-    {
-      "team": "Brazil",
-      "training_site": "Columbia Park Training Facility",
-      "total_distance_km": 15550,
-      "matches_count": 3
-    },
-    {
-      "team": "Congo DR",
-      "training_site": "Houston Training Centre",
-      "total_distance_km": 13721,
-      "matches_count": 3
-    },
-    {
-      "team": "England",
-      "training_site": "Swope Soccer Village",
-      "total_distance_km": 11747,
-      "matches_count": 3
-    },
-    {
-      "team": "Belgium",
-      "training_site": "Seattle Sounders FC Performance Centre and Clubhouse",
-      "total_distance_km": 11594,
+      "team": "Curaçao",
+      "training_site": "Florida Atlantic University",
+      "total_distance_km": 5153,
       "matches_count": 3
     },
     {
       "team": "Austria",
       "training_site": "UC Santa Barbara - Harder Stadium",
-      "total_distance_km": 11578,
-      "matches_count": 3
-    },
-    {
-      "team": "United States",
-      "training_site": "Great Park Sports Complex",
-      "total_distance_km": 10774,
-      "matches_count": 3
-    },
-    {
-      "team": "Ecuador",
-      "training_site": "Columbus Crew Performance Centre",
-      "total_distance_km": 10329,
-      "matches_count": 3
-    },
-    {
-      "team": "Qatar",
-      "training_site": "Westmont College",
-      "total_distance_km": 10281,
-      "matches_count": 3
-    },
-    {
-      "team": "Colombia",
-      "training_site": "Academia Atlas FC",
-      "total_distance_km": 10115,
-      "matches_count": 3
-    },
-    {
-      "team": "Portugal",
-      "training_site": "Gardens North County District Park",
-      "total_distance_km": 9232,
-      "matches_count": 3
-    },
-    {
-      "team": "France",
-      "training_site": "Bentley University",
-      "total_distance_km": 9181,
-      "matches_count": 3
-    },
-    {
-      "team": "Türkiye",
-      "training_site": "Arizona Athletic Grounds",
-      "total_distance_km": 9153,
-      "matches_count": 3
-    },
-    {
-      "team": "Senegal",
-      "training_site": "Rutgers University",
-      "total_distance_km": 8950,
-      "matches_count": 3
-    },
-    {
-      "team": "Czech Republic",
-      "training_site": "Mansfield Multipurpose Stadium",
-      "total_distance_km": 8940,
-      "matches_count": 3
-    },
-    {
-      "team": "Switzerland",
-      "training_site": "SDJA",
-      "total_distance_km": 8920,
-      "matches_count": 3
-    },
-    {
-      "team": "Saudi Arabia",
-      "training_site": "Austin FC Stadium",
-      "total_distance_km": 7268,
-      "matches_count": 3
-    },
-    {
-      "team": "Paraguay",
-      "training_site": "Spartan Soccer Complex",
-      "total_distance_km": 7020,
-      "matches_count": 3
-    },
-    {
-      "team": "Curaçao",
-      "training_site": "Florida Atlantic University",
-      "total_distance_km": 6955,
+      "total_distance_km": 4826,
       "matches_count": 3
     },
     {
       "team": "Bosnia and Herzegovina",
       "training_site": "RSL Stadium",
-      "total_distance_km": 6508,
+      "total_distance_km": 4722,
       "matches_count": 3
     },
     {
-      "team": "Uruguay",
-      "training_site": "Mayakoba Training Centre Cancun",
-      "total_distance_km": 6359,
+      "team": "England",
+      "training_site": "Swope Soccer Village",
+      "total_distance_km": 4510,
       "matches_count": 3
     },
     {
-      "team": "Spain",
-      "training_site": "Baylor School",
-      "total_distance_km": 6347,
+      "team": "Jordan",
+      "training_site": "University of Portland",
+      "total_distance_km": 4371,
       "matches_count": 3
     },
     {
-      "team": "Algeria",
-      "training_site": "University of Kansas",
-      "total_distance_km": 6211,
-      "matches_count": 3
-    },
-    {
-      "team": "Uzbekistan",
-      "training_site": "Atlanta United Training Centre",
-      "total_distance_km": 6189,
-      "matches_count": 3
-    },
-    {
-      "team": "South Korea",
-      "training_site": "Chivas Verde Valle",
-      "total_distance_km": 5835,
-      "matches_count": 3
-    },
-    {
-      "team": "Cape Verde",
-      "training_site": "Waters Sportsplex",
-      "total_distance_km": 5633,
-      "matches_count": 3
-    },
-    {
-      "team": "Mexico",
-      "training_site": "Centro de Alto Rendimiento (CAR)",
-      "total_distance_km": 5232,
-      "matches_count": 3
-    },
-    {
-      "team": "Sweden",
-      "training_site": "FC Dallas Stadium",
-      "total_distance_km": 4246,
+      "team": "Czech Republic",
+      "training_site": "Mansfield Multipurpose Stadium",
+      "total_distance_km": 4193,
       "matches_count": 3
     },
     {
@@ -228,31 +54,67 @@
     {
       "team": "Japan",
       "training_site": "Nashville SC",
-      "total_distance_km": 3724,
+      "total_distance_km": 3750,
       "matches_count": 3
     },
     {
-      "team": "Netherlands",
-      "training_site": "KC Current Training Facility",
-      "total_distance_km": 3704,
+      "team": "Türkiye",
+      "training_site": "Arizona Athletic Grounds",
+      "total_distance_km": 3624,
       "matches_count": 3
     },
     {
-      "team": "Canada",
-      "training_site": "National Soccer Development Centre",
-      "total_distance_km": 3364,
+      "team": "Qatar",
+      "training_site": "Westmont College",
+      "total_distance_km": 3547,
       "matches_count": 3
     },
     {
-      "team": "Croatia",
-      "training_site": "Episcopal High School",
-      "total_distance_km": 3273,
+      "team": "Uruguay",
+      "training_site": "Mayakoba Training Centre Cancun",
+      "total_distance_km": 3420,
       "matches_count": 3
     },
     {
       "team": "Scotland",
       "training_site": "Charlotte FC",
-      "total_distance_km": 2975,
+      "total_distance_km": 3388,
+      "matches_count": 3
+    },
+    {
+      "team": "Canada",
+      "training_site": "National Soccer Development Centre",
+      "total_distance_km": 3346,
+      "matches_count": 3
+    },
+    {
+      "team": "Saudi Arabia",
+      "training_site": "Austin FC Stadium",
+      "total_distance_km": 3303,
+      "matches_count": 3
+    },
+    {
+      "team": "Uzbekistan",
+      "training_site": "Atlanta United Training Centre",
+      "total_distance_km": 3249,
+      "matches_count": 3
+    },
+    {
+      "team": "Portugal",
+      "training_site": "Gardens North County District Park",
+      "total_distance_km": 3170,
+      "matches_count": 3
+    },
+    {
+      "team": "Germany",
+      "training_site": "Wake Forest University",
+      "total_distance_km": 3144,
+      "matches_count": 3
+    },
+    {
+      "team": "Colombia",
+      "training_site": "Academia Atlas FC",
+      "total_distance_km": 2880,
       "matches_count": 3
     },
     {
@@ -262,9 +124,99 @@
       "matches_count": 3
     },
     {
+      "team": "Switzerland",
+      "training_site": "SDJA",
+      "total_distance_km": 2792,
+      "matches_count": 3
+    },
+    {
+      "team": "Norway",
+      "training_site": "UNC Greensboro",
+      "total_distance_km": 2787,
+      "matches_count": 3
+    },
+    {
+      "team": "Spain",
+      "training_site": "Baylor School",
+      "total_distance_km": 2736,
+      "matches_count": 3
+    },
+    {
+      "team": "Croatia",
+      "training_site": "Episcopal High School",
+      "total_distance_km": 2684,
+      "matches_count": 3
+    },
+    {
+      "team": "Congo DR",
+      "training_site": "Houston Training Centre",
+      "total_distance_km": 2427,
+      "matches_count": 3
+    },
+    {
+      "team": "Ecuador",
+      "training_site": "Columbus Crew Performance Centre",
+      "total_distance_km": 2409,
+      "matches_count": 3
+    },
+    {
+      "team": "Algeria",
+      "training_site": "University of Kansas",
+      "total_distance_km": 2407,
+      "matches_count": 3
+    },
+    {
+      "team": "Australia",
+      "training_site": "Oakland Roots/Soul Training Facility",
+      "total_distance_km": 2380,
+      "matches_count": 3
+    },
+    {
+      "team": "Cape Verde",
+      "training_site": "Waters Sportsplex",
+      "total_distance_km": 2250,
+      "matches_count": 3
+    },
+    {
       "team": "IR Iran",
       "training_site": "Centro Xoloitzcuintle",
       "total_distance_km": 2127,
+      "matches_count": 3
+    },
+    {
+      "team": "Iraq",
+      "training_site": "The Greenbrier Sports Performance Centre",
+      "total_distance_km": 2091,
+      "matches_count": 3
+    },
+    {
+      "team": "Brazil",
+      "training_site": "Columbia Park Training Facility",
+      "total_distance_km": 1877,
+      "matches_count": 3
+    },
+    {
+      "team": "Netherlands",
+      "training_site": "KC Current Training Facility",
+      "total_distance_km": 1778,
+      "matches_count": 3
+    },
+    {
+      "team": "Belgium",
+      "training_site": "Seattle Sounders FC Performance Centre and Clubhouse",
+      "total_distance_km": 1741,
+      "matches_count": 3
+    },
+    {
+      "team": "United States",
+      "training_site": "Great Park Sports Complex",
+      "total_distance_km": 1691,
+      "matches_count": 3
+    },
+    {
+      "team": "Haiti",
+      "training_site": "Stockton University",
+      "total_distance_km": 1607,
       "matches_count": 3
     },
     {
@@ -274,9 +226,21 @@
       "matches_count": 3
     },
     {
+      "team": "Morocco",
+      "training_site": "The Pingry School",
+      "total_distance_km": 1521,
+      "matches_count": 3
+    },
+    {
       "team": "Argentina",
       "training_site": "Sporting KC Training Centre",
-      "total_distance_km": 1484,
+      "total_distance_km": 1482,
+      "matches_count": 3
+    },
+    {
+      "team": "Sweden",
+      "training_site": "FC Dallas Stadium",
+      "total_distance_km": 1208,
       "matches_count": 3
     },
     {
@@ -288,13 +252,49 @@
     {
       "team": "Ghana",
       "training_site": "Bryant University",
-      "total_distance_km": 1113,
+      "total_distance_km": 1162,
+      "matches_count": 3
+    },
+    {
+      "team": "France",
+      "training_site": "Bentley University",
+      "total_distance_km": 771,
+      "matches_count": 3
+    },
+    {
+      "team": "South Korea",
+      "training_site": "Chivas Verde Valle",
+      "total_distance_km": 669,
+      "matches_count": 3
+    },
+    {
+      "team": "Paraguay",
+      "training_site": "Spartan Soccer Complex",
+      "total_distance_km": 594,
+      "matches_count": 3
+    },
+    {
+      "team": "Panama",
+      "training_site": "Nottawasaga Training Site",
+      "total_distance_km": 558,
+      "matches_count": 3
+    },
+    {
+      "team": "Senegal",
+      "training_site": "Rutgers University",
+      "total_distance_km": 558,
       "matches_count": 3
     },
     {
       "team": "Ivory Coast",
       "training_site": "Philadelphia Union",
-      "total_distance_km": 541,
+      "total_distance_km": 557,
+      "matches_count": 3
+    },
+    {
+      "team": "Mexico",
+      "training_site": "Centro de Alto Rendimiento (CAR)",
+      "total_distance_km": 458,
       "matches_count": 3
     }
   ]
