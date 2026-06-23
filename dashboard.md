@@ -15,8 +15,8 @@ description: Which national team has/had to travel the most to their games?
 <h1 class="dashboard-title">Team travel distance by group stage</h1>
 
 <p class="dashboard-intro">
-  A focused look at the farthest-travelling teams of the 2026 World Cup group stage, with total miles
-  estimated from each squad&apos;s training site to its match venues.
+  A focused look at the farthest-travelling teams of the 2026 World Cup group stage, using each squad&apos;s
+  training site as the origin point and hovering for exact distance details.
 </p>
 
 <div class="dashboard-page">
@@ -59,10 +59,6 @@ description: Which national team has/had to travel the most to their games?
     <div class="panel-header">
       <div>
         <h2 id="chart-title">Total estimated travel distance</h2>
-        <p>
-          Bars are sorted descending. Distances are rounded to the nearest kilometer and reflect the three
-          group-stage matches for each team. Miles are shown in parentheses for quick reference.
-        </p>
       </div>
     </div>
 

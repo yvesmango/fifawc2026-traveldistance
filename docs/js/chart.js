@@ -18,35 +18,6 @@
     return `${formatKilometers(value)} km (${formatMiles(value)} mi)`;
   }
 
-  function createValueLabelPlugin() {
-    return {
-      id: "valueLabels",
-      afterDatasetsDraw(chart) {
-        const {
-          ctx,
-          data,
-          chartArea: { right },
-        } = chart;
-
-        ctx.save();
-        ctx.fillStyle = BAR_COLOR;
-        ctx.font = "600 12px Inter, system-ui, sans-serif";
-        ctx.textBaseline = "middle";
-
-        chart.getDatasetMeta(0).data.forEach((bar, index) => {
-          const value = data.datasets[0].data[index];
-          const label = formatDistance(value);
-          const labelWidth = ctx.measureText(label).width;
-          const x = Math.min(bar.x + 10, right - labelWidth - 4);
-          const y = bar.y;
-          ctx.fillText(label, x, y);
-        });
-
-        ctx.restore();
-      },
-    };
-  }
-
   function buildChartConfig(dataset) {
     return {
       type: "bar",
@@ -59,7 +30,7 @@
             backgroundColor: BAR_COLOR,
             borderColor: BAR_BORDER,
             borderWidth: 1,
-            borderRadius: 10,
+            borderRadius: 0,
             barThickness: 18,
             maxBarThickness: 22,
           },
@@ -123,7 +94,6 @@
           },
         },
       },
-      plugins: [createValueLabelPlugin()],
     };
   }
 
