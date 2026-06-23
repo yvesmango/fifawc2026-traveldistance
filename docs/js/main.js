@@ -1,5 +1,5 @@
 (function () {
-  const DATA_URL = window.TRAVEL_DISTANCE_DATA_URL || "./data/travel_distances.json";
+  const DATA_URL = window.TRAVEL_DISTANCE_DATA_URL || "./docs/data/travel_distances.json";
   const DEMO_DATA = {
     metadata: {
       generated_at: "Demo fallback",

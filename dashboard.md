@@ -4,13 +4,13 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance Dashboard
 description: Interactive chart of estimated group-stage air travel distance by national team.
 ---
 
-<link rel="stylesheet" href="{{ '/docs/css/style.css' | relative_url }}" />
+<link rel="stylesheet" href="./docs/css/style.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
-  window.TRAVEL_DISTANCE_DATA_URL = "{{ '/docs/data/travel_distances.json' | relative_url }}";
+  window.TRAVEL_DISTANCE_DATA_URL = "./docs/data/travel_distances.json";
 </script>
-<script src="{{ '/docs/js/chart.js' | relative_url }}" defer></script>
-<script src="{{ '/docs/js/main.js' | relative_url }}" defer></script>
+<script src="./docs/js/chart.js" defer></script>
+<script src="./docs/js/main.js" defer></script>
 
 # Team travel distance by group stage
 
