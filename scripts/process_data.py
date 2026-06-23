@@ -460,29 +460,26 @@ def lookup_airport_by_text(backend: AirportBackend, candidates: list[str]) -> Ai
             continue
         query_tokens = normalize_text_tokens(query)
         for airport in airport_rows:
-            iata = str(airport.get("iata", "")).strip()
-            if not iata:
-                continue
-            airport_type = str(airport.get("type", "")).lower()
-            if airport_type not in {"large_airport", "medium_airport"}:
-                continue
             scheduled = airport.get("scheduled_service")
             scheduled_bool = str(scheduled).upper() == "TRUE" if isinstance(scheduled, str) else bool(scheduled)
             if not scheduled_bool:
+                continue
+            airport_type = str(airport.get("type", "")).lower()
+            if airport_type not in {"large_airport", "medium_airport"}:
                 continue
             city = normalize_location_text(airport.get("city") or "").lower()
             name = normalize_location_text(airport.get("airport") or "").lower()
             score = 0.0
             if query == city or query == name:
                 score += 100.0
-            if query in city or city in query:
+            if city and (query in city or city in query):
                 score += 60.0
-            if query in name or name in query:
+            if name and (query in name or name in query):
                 score += 60.0
             for token in query_tokens:
-                if token in city:
+                if city and token in city:
                     score += 8.0
-                if token in name:
+                if name and token in name:
                     score += 6.0
             if airport_type == "large_airport":
                 score += 10.0
@@ -490,7 +487,19 @@ def lookup_airport_by_text(backend: AirportBackend, candidates: list[str]) -> Ai
                 best_score = score
                 best_row = airport
 
-    return AirportBackend._normalize_airport_result(best_row)
+    if best_row is None or best_score <= 0:
+        return None
+
+    normalized = AirportBackend._normalize_airport_result(best_row)
+    if normalized and normalized.iata:
+        return normalized
+
+    lat = _coerce_float(best_row.get("latitude"))
+    lon = _coerce_float(best_row.get("longitude"))
+    if lat is None or lon is None:
+        return None
+
+    return backend.find_nearest_airport(lat, lon, filters=AIRPORT_FILTERS)
 
 
 def ensure_directories() -> None:
