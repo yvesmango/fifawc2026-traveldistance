@@ -15,7 +15,7 @@ The processing script is the single source of truth for the dataset.
 - Standardizes team names
 - Geocodes training sites
 - Finds nearby commercial airports
-- Calculates total travel distance per team
+- Calculates total air travel distance per team
 - Writes `data/processed/travel_distances.json`
 - Copies the same payload to `docs/data/travel_distances.json`
 

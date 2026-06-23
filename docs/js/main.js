@@ -128,7 +128,7 @@
       }
     } catch (error) {
       console.warn("Falling back to demo data:", error);
-      showError("The generated JSON could not be loaded, so a demo dataset is shown instead.");
+      showError("The generated JSON could not be loaded, so a demo air travel dataset is shown instead.");
       updateMeta(DEMO_DATA.metadata);
       renderSummaryRows(DEMO_DATA.teams);
       renderChart(DEMO_DATA.teams);

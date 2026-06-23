@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Methodology | FIFA World Cup 2026 Travel Distance Dashboard
-description: Notes on the geocoding, airport mapping, and distance workflow.
+description: Notes on the geocoding, airport mapping, and air travel distance workflow.
 ---
 
 # Methodology
@@ -13,7 +13,7 @@ This project starts with each team&apos;s **Training_Site** rather than its city
 1. Geocode each unique training site with Nominatim through geopy.
 2. Scan for the nearest valid commercial airport with airports-py.
 3. Resolve each venue to a destination airport, falling back to the venue city if needed.
-4. Calculate airport-to-airport great-circle distance in kilometers.
+4. Calculate airport-to-airport great-circle air distance in kilometers.
 5. Sum the three group-stage matches for each team.
 
 ## Assumptions

@@ -2,11 +2,11 @@
 
 # FIFA World Cup 2026 Travel Distance Dashboard
 
-**Goal**: Estimate the total group-stage travel burden for each national team in the 2026 World Cup.
+**Goal**: Estimate the total group-stage air travel burden for each national team in the 2026 World Cup.
 
 ## Introduction
 
-This project combines training-site geocoding with airport proximity mapping to estimate how far each team is likely to travel during the group stage. The result is a static, GitHub Pages-friendly portfolio site with a precomputed JSON dataset and an interactive chart.
+This project combines training-site geocoding with airport proximity mapping to estimate how far each team is likely to travel by air during the group stage. The result is a static, GitHub Pages-friendly portfolio site with a precomputed JSON dataset and an interactive chart.
 
 ## Data Sources
 
@@ -21,7 +21,7 @@ This project combines training-site geocoding with airport proximity mapping to 
 3. Geocode each unique training site with geopy and Nominatim.
 4. Find the nearest valid commercial airport with airports-py.
 5. Resolve each venue to a destination airport with a city-level fallback.
-6. Calculate airport-to-airport distance in kilometers and sum the three group matches for each team.
+6. Calculate airport-to-airport distance in kilometers and sum the three group-stage flights for each team.
 
 ## Outputs
 

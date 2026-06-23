@@ -48,13 +48,13 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
   <section class="panel chart-panel" aria-labelledby="chart-title">
     <div class="panel-header">
       <div>
-        <h2 id="chart-title">Total estimated (air) travel distance</h2>
+        <h2 id="chart-title">Total estimated air travel distance</h2>
       </div>
     </div>
 
     <div id="loading-state" class="loading-state" role="status" aria-live="polite">
       <div class="spinner" aria-hidden="true"></div>
-      <span>Loading travel distance data…</span>
+      <span>Loading air travel distance data…</span>
     </div>
 
     <div id="error-state" class="error-state hidden" role="alert">
@@ -65,7 +65,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
     </div>
 
     <div class="chart-wrap">
-      <canvas id="travel-chart" aria-label="Horizontal bar chart of team travel distance" role="img"></canvas>
+      <canvas id="travel-chart" aria-label="Horizontal bar chart of team air travel distance" role="img"></canvas>
     </div>
 
     <div class="table-wrap">
@@ -84,10 +84,10 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
   </section>
 
   <footer class="footer">
-    <p>
+      <p>
       Methodology: each team starts from its training site, which is mapped to the nearest commercial
-      airport before distances are calculated against the nearest airport to each venue. Values are shown in
-      kilometers with miles in parentheses. The summary table includes the original training site used for
+      airport before flight distances are calculated against the nearest airport to each venue. Values are shown
+      in kilometers with miles in parentheses. The summary table includes the original training site used for
       each team.
     </p>
   </footer>
