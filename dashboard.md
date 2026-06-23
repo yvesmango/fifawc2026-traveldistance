@@ -21,7 +21,6 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
       <div class="meta-card meta-card-dataset">
         <span class="meta-label">Datasets</span>
         <span class="meta-source">
-          Sources:
           <a
             href="https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/"
             target="_blank"
@@ -49,7 +48,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
   <section class="panel chart-panel" aria-labelledby="chart-title">
     <div class="panel-header">
       <div>
-        <h2 id="chart-title">Total estimated travel distance</h2>
+        <h2 id="chart-title">Total estimated (air) travel distance</h2>
       </div>
     </div>
 
