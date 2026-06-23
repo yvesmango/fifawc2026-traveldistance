@@ -103,7 +103,7 @@ def draw_bar_chart(payload: dict, output: Path) -> None:
     note_font = ImageFont.truetype(str(regular_path), size=20)
 
     title = "Which national team has to fly the most to their games?"
-    subtitle = "2026 FIFA World Cup group stage | Total estimated air travel distance"
+    subtitle = "2026 FIFA World Cup group stage | Total estimated one-way legs"
     note = "Kilometers are the canonical unit. Miles are shown only in the interactive dashboard."
 
     draw.multiline_text((LEFT_MARGIN, 36), title, font=title_font, fill=TEXT, spacing=6)
