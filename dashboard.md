@@ -26,7 +26,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
             target="_blank"
             rel="noreferrer"
           >
-            Roadtrips schedule
+            World Cup match schedule
           </a>
           and
           <a
