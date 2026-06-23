@@ -72,7 +72,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
       <table class="summary-table" aria-label="Travel distance summary table">
         <thead>
           <tr>
-            <th>Rank</th>
+            <th>Pos</th>
             <th>Team</th>
             <th>Training Site</th>
             <th>Distance</th>
@@ -86,9 +86,10 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
 
   <p class="footer-note">
     Methodology: each team starts from its training site, which is mapped to the nearest commercial
-    airport before one-way flight distances are calculated against the nearest airport to each venue. The
-    flight time equivalent doubles those distances and divides by 900 km/h to approximate round-trip time
-    in the air. Kilometers remain the canonical unit, with miles shown in parentheses elsewhere on the site.
-    The summary table includes the original training site used for each team.
+    airport before flight distances are calculated against the nearest airport to each venue. Those distance
+    totals are one-way legs, while the flight time equivalent doubles them and divides by 900 km/h to
+    approximate round-trip time in the air. Kilometers remain the canonical unit, with miles shown in
+    parentheses elsewhere on the site. The summary table includes the original training site used for each
+    team.
   </p>
 </div>
