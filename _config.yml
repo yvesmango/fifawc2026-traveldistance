@@ -2,7 +2,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: light
 
 title: Which national team has/had to travel the most to their games?
-description: Which national team has/had to travel the most to their games? A story of training camps, venue hops, and total travel miles.
+description: Estimating 2026 World Cup group-stage travel distances between team training sites and match venues.
 
 plugins:
   - jekyll-sitemap
