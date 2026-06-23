@@ -108,7 +108,7 @@ body {
 
 .chart-wrap {
   position: relative;
-  height: min(115vh, 1450px);
+  height: min(138vh, 1700px);
 }
 
 .table-wrap {
@@ -257,7 +257,7 @@ body {
   }
 
   .chart-wrap {
-    height: min(100vh, 1200px);
+    height: min(114vh, 1380px);
   }
 }
 
@@ -276,6 +276,6 @@ body {
   }
 
   .chart-wrap {
-    height: min(88vh, 900px);
+    height: min(102vh, 1040px);
   }
 }
