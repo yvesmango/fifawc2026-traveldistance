@@ -124,10 +124,6 @@ VENUE_CITY_AIRPORT_OVERRIDES = {
     "vancouver": "YVR",
 }
 
-TEAM_DISTANCE_MULTIPLIERS = {
-    "IR Iran": 2.0,
-}
-
 
 def configure_logging() -> None:
     logging.basicConfig(
@@ -745,15 +741,12 @@ def team_distance_aggregation(
     rows = []
     for team, total in team_totals.items():
         origin = team_origins.get(team)
-        multiplier = TEAM_DISTANCE_MULTIPLIERS.get(team, 1.0)
-        adjusted_total = int(round(total * multiplier))
         rows.append(
             {
                 "team": team,
                 "training_site": origin.training_site if origin else "",
-                "total_distance_km": adjusted_total,
+                "total_distance_km": int(total),
                 "matches_count": int(team_matches.get(team, 0)),
-                "distance_multiplier": multiplier,
             }
         )
     rows.sort(key=lambda item: item["total_distance_km"], reverse=True)
@@ -779,17 +772,8 @@ def build_payload(
             "methodology": (
                 "Travel distance is the sum of great-circle distances between each team's "
                 "nearest commercial airport to its training site and the nearest commercial "
-                "airport to each match venue. IR Iran is multiplied by 2.0 to approximate "
-                "same-day out-and-back travel."
+                "airport to each match venue."
             ),
-            "adjustments": [
-                {
-                    "team": team,
-                    "multiplier": multiplier,
-                    "note": "Same-day out-and-back travel approximation",
-                }
-                for team, multiplier in TEAM_DISTANCE_MULTIPLIERS.items()
-            ],
             "teams_processed": len(team_rows),
             "matches_processed": int(group_stage_rows),
             "origin_rows_processed": int(origin_rows),

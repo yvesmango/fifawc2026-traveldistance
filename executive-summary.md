@@ -6,9 +6,9 @@ description: Brief topline summary of the air travel ranking and its key takeawa
 
 # Executive Summary
 
-This analysis answers a simple question: which national team had to travel the most by air to reach its 2026 World Cup group-stage matches? The short answer is Curaçao, and the wider pattern is just as telling. The top of the table is dominated by longer coast-to-coast legs and repeated venue hops, while the bottom of the table shows how much easier the tournament becomes when training sites and match venues sit closer together. IR Iran is the one outlier by policy, because its total is doubled to reflect same-day out-and-back travel.
+This analysis answers a simple question: which national team had to travel the most by air to reach its 2026 World Cup group-stage matches? The short answer is Curaçao, and the wider pattern is just as telling. The top of the table is dominated by longer coast-to-coast legs and repeated venue hops, while the bottom of the table shows how much easier the tournament becomes when training sites and match venues sit closer together.
 
-**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent uses that same one-way distance total and converts it at 900 km/h to give an in-air time estimate. IR Iran is the one exception, with its total doubled to approximate same-day out-and-back travel.
+**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent uses that same one-way distance total and converts it at 900 km/h to give an in-air time estimate.
 
 ## Top 5
 
@@ -34,8 +34,6 @@ The bottom five teams face a far lighter travel load. The bottom two are separat
 
 The time-equivalent lens tells the same story from the other end of the table. Mexico sits at roughly 31 minutes of in-air time, while the rest of the bottom five all stay under 40 minutes. That contrast underscores how much geography changes the tournament experience for each squad.
 
-For broader context, the average team travels about 2,533 km one way across the group stage. That puts the typical squad well below the top five, but still far above the lightest-traveling teams at the bottom of the table, which shows how uneven the tournament geography really is.
-
 ## So What?
 
-The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of longer flight legs across North America. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard. Norway and South Africa now land in the middle of the table rather than the top, while IR Iran&apos;s doubled figure remains a deliberate policy exception (courtesy of the US government).
+The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of longer flight legs across North America. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard. Norway and South Africa now land in the middle of the table rather than the top.

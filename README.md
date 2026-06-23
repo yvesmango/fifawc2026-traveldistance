@@ -28,7 +28,7 @@ This project combines training-site geocoding with airport proximity mapping to 
 
 ## Metric Note
 
-Kilometers are the canonical unit in the analysis. The dashboard also shows a flight time equivalent based on the same one-way distance total, using 900 km/h as the cruise-speed assumption. That time is a convenience for readers, not a separate routing model. IR Iran is the lone exception: its total is doubled to approximate same-day out-and-back travel.
+Kilometers are the canonical unit in the analysis. The dashboard also shows a flight time equivalent based on the same one-way distance total, using 900 km/h as the cruise-speed assumption. That time is a convenience for readers, not a separate routing model.
 
 ## Packages Used
 
