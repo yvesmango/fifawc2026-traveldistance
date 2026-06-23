@@ -28,7 +28,7 @@ Curaçao leads the table with over 5 hours of flight time across three matches�
 
 The bottom five teams face a far lighter travel load. **Mexico's 10 minutes of flight time per match is less than the average commute in many major cities**—a stark contrast to Curaçao's 1 hour and 55 minutes per match. The bottom two are separated by only 1 km (less than a minute of flight time), showing just how compressed the low end of the ranking is.
 
-Compared with Curaçao, **Ivory Coast covers more than 11 times less total distance and spends nearly 11 times less time in the air**—the difference between a short regional hop and a cross-country journey. This contrast is even more striking given that **both teams are in Group E** and will face each other, yet one arrives after a 10-minute flight while the other has spent nearly 2 hours in the air per matchday.
+Compared with Curaçao, **Ivory Coast covers more than 11 times less total distance and spends nearly 11 times less time in the air**—the difference between a short regional hop and a cross-country journey. This contrast is even more striking given that **both teams are in Group E** and will face each other, yet one arrives after a 10-minute commute while the other has spent nearly 2 hours in the air per matchday.
 
 ## So What? 
 
