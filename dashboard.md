@@ -84,12 +84,13 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
     </div>
   </section>
 
-  <p class="footer-note">
+  <p class="footer-note"><i>
     Methodology: each team starts from its training site, which is mapped to the nearest commercial
     airport before flight distances are calculated against the nearest airport to each venue. Those distance
     totals are one-way legs, and the flight time equivalent converts the same one-way distance total at
     900 km/h to give an in-air time estimate. Kilometers remain the canonical unit, with miles shown in
     parentheses elsewhere on the site. The summary table includes the original training site used for each
     team.
+  </i>
   </p>
 </div>
