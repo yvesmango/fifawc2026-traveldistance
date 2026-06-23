@@ -72,7 +72,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
       <table class="summary-table" aria-label="Travel distance summary table">
         <thead>
           <tr>
-            <th>Pos</th>
+            <th>Rank</th>
             <th>Team</th>
             <th>Training Site</th>
             <th>One-way distance</th>

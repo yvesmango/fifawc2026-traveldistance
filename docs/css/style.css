@@ -134,18 +134,18 @@ body {
 
 .summary-table th:nth-child(1),
 .summary-table td:nth-child(1) {
-  width: 6%;
+  width: 8%;
   text-align: right;
 }
 
 .summary-table th:nth-child(2),
 .summary-table td:nth-child(2) {
-  width: 24%;
+  width: 23%;
 }
 
 .summary-table th:nth-child(3),
 .summary-table td:nth-child(3) {
-  width: 30%;
+  width: 29%;
 }
 
 .summary-table th:nth-child(4),
