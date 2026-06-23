@@ -1,7 +1,7 @@
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: light
 
-title: Which national team has to fly the most to/from their games?
+title: Which national team has to fly the most to their games?
 description: Estimating one-way air travel distances for 2026 World Cup group-stage matches between team training camps and match venues.
 
 plugins:
