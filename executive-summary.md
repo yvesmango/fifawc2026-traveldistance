@@ -22,11 +22,11 @@ South Africa is the clear outlier. The top four most-traveled teams all clear 23
 
 ## Bottom 5
 
-44. Ivory Coast - 541 km
-45. Paraguay - 544 km
+44. Argentina - 1,484 km
+45. Egypt - 1,167 km
 46. Ghana - 1,113 km
-47. Egypt - 1,167 km
-48. Argentina - 1,484 km
+47. Paraguay - 544 km
+48. Ivory Coast - 541 km
 
 The bottom five teams face a far lighter travel load. The bottom two are separated by only 3 km, which shows just how compressed the low end of the ranking is. Compared with South Africa, the least-traveled team covers more than 80 times less distance.
 
