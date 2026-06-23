@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Dashboard | FIFA World Cup 2026 Travel Distance Dashboard
-description: Which national team has/had to travel the most to their games?
+title: Dashboard | FIFA World Cup 2026 Travel Distance
 ---
 
 <link rel="stylesheet" href="./docs/css/style.css" />
@@ -11,13 +10,6 @@ description: Which national team has/had to travel the most to their games?
 </script>
 <script src="./docs/js/chart.js" defer></script>
 <script src="./docs/js/main.js" defer></script>
-
-<h1 class="dashboard-title">Team travel distance by group stage</h1>
-
-<p class="dashboard-intro">
-  A focused look at the farthest-travelling teams of the 2026 World Cup group stage, using each squad&apos;s
-  training site as the origin point and hovering for exact distance details.
-</p>
 
 <div class="dashboard-page">
   <section class="hero">
