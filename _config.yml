@@ -13,8 +13,8 @@ navigation:
   - name: Read me
     link: ./index.html
   - name: Dashboard
-    link: ./dashboard.html
+    link: ./dashboard.md
   - name: Methodology
-    link: ./methodology.html
+    link: ./methodology.md
   - name: Python Script
-    link: ./process.html
+    link: ./process.md
