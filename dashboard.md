@@ -12,9 +12,12 @@ description: Interactive chart of estimated group-stage air travel distance by n
 <script src="./docs/js/chart.js" defer></script>
 <script src="./docs/js/main.js" defer></script>
 
-# Team travel distance by group stage
+<h1 class="dashboard-title">Team travel distance by group stage</h1>
 
-The chart ranks all 48 teams by total estimated group-stage air travel distance. Each bar is the sum of the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
+<p class="dashboard-intro">
+  The chart ranks all 48 teams by total estimated group-stage air travel distance. Each bar is the sum of
+  the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
+</p>
 
 <div class="page-shell dashboard-page">
   <section class="hero">

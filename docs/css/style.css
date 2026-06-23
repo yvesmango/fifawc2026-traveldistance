@@ -76,11 +76,25 @@ pre {
   margin-bottom: 12px;
 }
 
-h1 {
+.page-shell h1,
+.dashboard-title {
   margin: 16px 0 12px;
   font-size: clamp(2.25rem, 5vw, 4.25rem);
   line-height: 0.97;
   letter-spacing: -0.05em;
+}
+
+.dashboard-title {
+  font-size: clamp(1.8rem, 3.4vw, 2.9rem);
+  margin-bottom: 10px;
+}
+
+.dashboard-intro {
+  max-width: 70ch;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 h2 {
@@ -207,32 +221,58 @@ h2 {
 
 .chart-wrap {
   position: relative;
-  height: min(74vh, 860px);
+  height: min(96vh, 1180px);
 }
 
 .table-wrap {
   margin-top: 18px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .summary-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 720px;
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 0.82rem;
 }
 
 .summary-table th,
 .summary-table td {
-  padding: 12px 10px;
+  padding: 9px 8px;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
   text-align: left;
+  vertical-align: top;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .summary-table th {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.summary-table th:nth-child(1),
+.summary-table td:nth-child(1) {
+  width: 18%;
+}
+
+.summary-table th:nth-child(2),
+.summary-table td:nth-child(2) {
+  width: 38%;
+}
+
+.summary-table th:nth-child(3),
+.summary-table td:nth-child(3) {
+  width: 24%;
+}
+
+.summary-table th:nth-child(4),
+.summary-table td:nth-child(4) {
+  width: 20%;
+  text-align: right;
 }
 
 .summary-table td:last-child,
@@ -409,7 +449,7 @@ h2 {
   }
 
   .chart-wrap {
-    height: min(68vh, 780px);
+    height: min(88vh, 980px);
   }
 }
 
@@ -429,6 +469,15 @@ h2 {
   }
 
   .chart-wrap {
-    height: min(66vh, 660px);
+    height: min(84vh, 860px);
+  }
+
+  .summary-table {
+    font-size: 0.76rem;
+  }
+
+  .summary-table th,
+  .summary-table td {
+    padding: 7px 6px;
   }
 }
