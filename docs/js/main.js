@@ -45,7 +45,6 @@
   const errorState = document.getElementById("error-state");
   const errorMessage = document.getElementById("error-message");
   const teamCount = document.getElementById("team-count");
-  const datasetStatus = document.getElementById("dataset-status");
   const generatedAt = document.getElementById("generated-at");
   const summaryBody = document.getElementById("summary-body");
   const canvas = document.getElementById("travel-chart");
@@ -63,9 +62,8 @@
     return window.TravelDistanceChart.formatDistance(value);
   }
 
-  function updateMeta(metadata, datasetLabel) {
+  function updateMeta(metadata) {
     teamCount.textContent = String(metadata.teams_processed ?? 0);
-    datasetStatus.textContent = datasetLabel;
     generatedAt.textContent = metadata.generated_at ?? "Unknown";
   }
 
@@ -120,8 +118,7 @@
       }
       const dataset = sortDataset(payload.teams);
       const metadata = payload.metadata ?? {};
-      const label = metadata.dataset_type === "demo" ? "Demo fallback JSON" : "Live JSON";
-      updateMeta(metadata, label);
+      updateMeta(metadata);
       renderSummaryRows(dataset);
       renderChart(dataset);
       if (metadata.dataset_type === "demo") {
@@ -132,7 +129,7 @@
     } catch (error) {
       console.warn("Falling back to demo data:", error);
       showError("The generated JSON could not be loaded, so a demo dataset is shown instead.");
-      updateMeta(DEMO_DATA.metadata, "Demo fallback");
+      updateMeta(DEMO_DATA.metadata);
       renderSummaryRows(DEMO_DATA.teams);
       renderChart(DEMO_DATA.teams);
     } finally {

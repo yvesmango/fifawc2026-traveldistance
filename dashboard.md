@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Dashboard | FIFA World Cup 2026 Travel Distance Dashboard
-description: Interactive chart of estimated group-stage air travel distance by national team.
+description: Which national team has/had to travel the most to their games?
 ---
 
 <link rel="stylesheet" href="./docs/css/style.css" />
@@ -15,8 +15,8 @@ description: Interactive chart of estimated group-stage air travel distance by n
 <h1 class="dashboard-title">Team travel distance by group stage</h1>
 
 <p class="dashboard-intro">
-  The chart ranks all 48 teams by total estimated group-stage air travel distance. Each bar is the sum of
-  the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
+  A focused look at the farthest-travelling teams of the 2026 World Cup group stage, with total miles
+  estimated from each squad&apos;s training site to its match venues.
 </p>
 
 <div class="dashboard-page">
@@ -28,7 +28,7 @@ description: Interactive chart of estimated group-stage air travel distance by n
       </div>
       <div class="meta-card meta-card-dataset">
         <span class="meta-label">Dataset</span>
-        <strong id="dataset-status">Fetching JSON</strong>
+        <strong>Source set</strong>
         <span class="meta-source">
           Sources:
           <a
@@ -65,9 +65,6 @@ description: Interactive chart of estimated group-stage air travel distance by n
         </p>
       </div>
     </div>
-    <p class="source-note">
-      Source note: prepared Google Sheets exports, processed locally with Python
-    </p>
 
     <div id="loading-state" class="loading-state" role="status" aria-live="polite">
       <div class="spinner" aria-hidden="true"></div>
