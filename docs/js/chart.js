@@ -145,9 +145,11 @@
               display: false,
             },
             ticks: {
+              autoSkip: false,
+              padding: 6,
               color: "#0f172a",
               font: {
-                size: 12,
+                size: 11,
                 weight: "600",
               },
             },
