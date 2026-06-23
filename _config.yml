@@ -12,9 +12,9 @@ plugins:
 navigation:
   - name: Read me
     link: ./index.html
+  - name: Executive Summary
+    link: ./executive-summary
   - name: Dashboard
     link: ./dashboard
-  - name: Methodology
-    link: ./methodology
   - name: Python Script
     link: ./process

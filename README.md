@@ -26,7 +26,7 @@ This project combines training-site geocoding with airport proximity mapping to 
 ## Outputs
 
 - [Dashboard](./dashboard.html)
-- [Methodology](./methodology.html)
+- [Executive Summary](./executive-summary.html)
 - [Python script](./scripts/process_data.py)
 - Generated JSON: `docs/data/travel_distances.json`
 

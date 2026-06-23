@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FIFA World Cup 2026 Travel Distance Dashboard
-description: Project overview and links to the dashboard, methodology, and Python pipeline.
+description: Project overview and links to the executive summary, dashboard, and Python pipeline.
 ---
 
 # FIFA World Cup 2026 Travel Distance Dashboard
@@ -20,7 +20,7 @@ The analysis uses each team&apos;s training site as the origin point, then maps 
 - Team origin data with training-site locations exported from Google Sheets
 - Airport lookup data used for nearest-airport matching
 
-## Methodology
+## Approach
 
 1. Load the two CSV exports with Python and pandas.
 2. Normalize team names, including Cape Verde and Cabo Verde.
@@ -32,7 +32,7 @@ The analysis uses each team&apos;s training site as the origin point, then maps 
 ## Outputs
 
 - [Dashboard](./dashboard.html)
-- [Methodology](./methodology.html)
+- [Executive Summary](./executive-summary.html)
 - [Python script](./process.html)
 - Generated JSON used by the chart: [docs/data/travel_distances.json](./docs/data/travel_distances.json)
 

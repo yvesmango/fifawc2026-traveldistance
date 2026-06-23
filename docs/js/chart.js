@@ -1,6 +1,6 @@
 (function () {
-  const BAR_COLOR = "#7fa8d6";
-  const BAR_BORDER = "#5f88b8";
+  const BAR_COLOR = "#e4a96b";
+  const BAR_BORDER = "#c98b4b";
 
   function formatKilometers(value) {
     return new Intl.NumberFormat("en-US", {
