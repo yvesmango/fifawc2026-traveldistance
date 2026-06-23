@@ -8,7 +8,7 @@ description: Brief topline summary of the air travel ranking and its key takeawa
 
 This analysis answers a simple question: which national team had to travel the most by air to reach its 2026 World Cup group-stage matches? The short answer is Curaçao, and the wider pattern is just as telling. The top of the table is dominated by longer coast-to-coast legs and repeated venue hops, while the bottom of the table shows how much easier the tournament becomes when training sites and match venues sit closer together. Norway now sits 21st at 2,787 km, and South Africa sits 19th at 2,827 km, which is a useful reality check that the airport mapping is now behaving much more sensibly.
 
-**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent uses that same one-way distance total and converts it at 900 km/h to give an in-air time estimate.
+**Note:** the distance ranking shown here is a one-way sum from each team&apos;s training site to each group-stage venue. The dashboard&apos;s flight-time equivalent uses that same one-way distance total and converts it at 900 km/h to give an in-air time estimate. IR Iran is the one exception, with its total doubled to approximate same-day out-and-back travel.
 
 ## Top 5
 
