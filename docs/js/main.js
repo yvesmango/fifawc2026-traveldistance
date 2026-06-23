@@ -1,5 +1,6 @@
 (function () {
   const DATA_URL = window.TRAVEL_DISTANCE_DATA_URL || "./docs/data/travel_distances.json";
+  const FLIGHT_SPEED_KMH = 900;
   const DEMO_DATA = {
     metadata: {
       generated_at: "Demo fallback",
@@ -62,6 +63,16 @@
     return window.TravelDistanceChart.formatDistance(value);
   }
 
+  function formatFlightTimeEquivalent(distanceKm) {
+    const totalMinutes = Math.round(((distanceKm * 2) / FLIGHT_SPEED_KMH) * 60);
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    if (hours === 0) {
+      return `${minutes}m`;
+    }
+    return `${hours}h ${minutes}m`;
+  }
+
   function updateMeta(metadata) {
     teamCount.textContent = String(metadata.teams_processed ?? 0);
     generatedAt.textContent = metadata.generated_at ?? "Unknown";
@@ -69,13 +80,14 @@
 
   function renderSummaryRows(dataset) {
     summaryBody.innerHTML = "";
-    dataset.forEach((row) => {
+    dataset.forEach((row, index) => {
       const tr = document.createElement("tr");
       tr.innerHTML = `
+        <td>${row.rank ?? index + 1}</td>
         <td>${row.team}</td>
         <td>${row.training_site ?? "Unknown"}</td>
         <td>${formatDistance(row.total_distance_km)}</td>
-        <td>${row.matches_count ?? 3}</td>
+        <td>${formatFlightTimeEquivalent(row.total_distance_km)}</td>
       `;
       summaryBody.appendChild(tr);
     });
@@ -103,7 +115,12 @@
   }
 
   function sortDataset(dataset) {
-    return [...dataset].sort((left, right) => right.total_distance_km - left.total_distance_km);
+    return [...dataset]
+      .sort((left, right) => right.total_distance_km - left.total_distance_km)
+      .map((row, index) => ({
+        ...row,
+        rank: index + 1,
+      }));
   }
 
   async function loadData() {
