@@ -34,6 +34,8 @@ The bottom five teams face a far lighter travel load. The bottom two are separat
 
 The time-equivalent lens tells the same story from the other end of the table. Mexico sits at roughly 31 minutes of in-air time, while the rest of the bottom five all stay under 40 minutes. That contrast underscores how much geography changes the tournament experience for each squad.
 
+For broader context, the average team travels about 2,533 km one way across the group stage. That puts the typical squad well below the top five, but still far above the lightest-traveling teams at the bottom of the table, which shows how uneven the tournament geography really is.
+
 ## So What?
 
-The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of longer flight legs across North America. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard. Norway and South Africa now land in the middle of the table rather than the top, which confirms the airport lookup fix removed the earlier inflation, while IR Iran&apos;s doubled figure remains a deliberate policy exception.
+The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of longer flight legs across North America. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard. Norway and South Africa now land in the middle of the table rather than the top, while IR Iran&apos;s doubled figure remains a deliberate policy exception (courtesy of the US government).
