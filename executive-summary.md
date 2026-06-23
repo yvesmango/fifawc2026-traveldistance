@@ -24,11 +24,13 @@ The time-equivalent view makes that gap feel even more tangible: South Africa&ap
 
 ## Bottom 5
 
-44. Argentina - 1,484 km
-45. Egypt - 1,167 km
-46. Ghana - 1,113 km
-47. Paraguay - 544 km
-48. Ivory Coast - 541 km
+<ol start="44">
+  <li>Argentina - 1,484 km</li>
+  <li>Egypt - 1,167 km</li>
+  <li>Ghana - 1,113 km</li>
+  <li>Paraguay - 544 km</li>
+  <li>Ivory Coast - 541 km</li>
+</ol>
 
 The bottom five teams face a far lighter travel load. The bottom two are separated by only 3 km, which shows just how compressed the low end of the ranking is. Compared with South Africa, the least-traveled team covers more than 80 times less distance.
 
@@ -37,4 +39,3 @@ The time-equivalent lens tells the same story from the other end of the table. I
 ## So What?
 
 The ranking shows that geography still matters. Teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of long flight legs across a continent. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the dashboard.
-
