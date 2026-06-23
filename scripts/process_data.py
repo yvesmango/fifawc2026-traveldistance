@@ -127,6 +127,12 @@ class AirportLookup:
     raw: Any = None
 
 
+@dataclass(slots=True)
+class TeamOrigin:
+    training_site: str
+    airport: AirportLookup
+
+
 class AirportBackend:
     def __init__(self) -> None:
         self.module = self._import_module()
@@ -496,14 +502,14 @@ def build_team_origin_lookup(
     origins: pd.DataFrame,
     geo_resolver: GeoResolver,
     airport_backend: AirportBackend,
-) -> dict[str, AirportLookup]:
+) -> dict[str, TeamOrigin]:
     team_col = pick_column(origins, ["team", "team_name", "country"])
     site_col = pick_column(origins, ["training_site", "training site", "origin", "camp"])
     city_col = pick_column(origins, ["city", "training_city", "camp_city"])
 
     geo_cache: dict[str, tuple[float, float] | None] = {}
     airport_cache: dict[str, AirportLookup | None] = {}
-    lookup: dict[str, AirportLookup] = {}
+    lookup: dict[str, TeamOrigin] = {}
 
     for _, row in origins.iterrows():
         team = normalize_team_name(row.get(team_col))
@@ -528,7 +534,7 @@ def build_team_origin_lookup(
             training_site_candidates(pd.Series({"training_site": training_site, "city": city, "team": team})),
         )
         if airport:
-            lookup[team] = airport
+            lookup[team] = TeamOrigin(training_site=training_site, airport=airport)
 
     return lookup
 
@@ -583,7 +589,7 @@ def select_venue_column(matches: pd.DataFrame) -> str:
 
 def team_distance_aggregation(
     matches: pd.DataFrame,
-    team_origins: dict[str, AirportLookup],
+    team_origins: dict[str, TeamOrigin],
     venue_lookup: dict[str, AirportLookup],
     airport_backend: AirportBackend,
 ) -> list[dict[str, Any]]:
@@ -633,10 +639,13 @@ def team_distance_aggregation(
                 logging.warning("Missing training airport for team %s", team)
                 continue
             try:
-                distance = airport_backend.calculate_distance(origin.iata, destination.iata)
+                distance = airport_backend.calculate_distance(origin.airport.iata, destination.iata)
             except Exception as exc:  # pragma: no cover - backend dependent
                 logging.warning(
-                    "Could not calculate distance for %s -> %s: %s", origin.iata, destination.iata, exc
+                    "Could not calculate distance for %s -> %s: %s",
+                    origin.airport.iata,
+                    destination.iata,
+                    exc,
                 )
                 continue
             team_totals[team] = team_totals.get(team, 0) + int(round(distance))
@@ -644,9 +653,11 @@ def team_distance_aggregation(
 
     rows = []
     for team, total in team_totals.items():
+        origin = team_origins.get(team)
         rows.append(
             {
                 "team": team,
+                "training_site": origin.training_site if origin else "",
                 "total_distance_km": int(total),
                 "matches_count": int(team_matches.get(team, 0)),
             }
@@ -687,11 +698,36 @@ def build_payload(
 
 def generate_demo_payload() -> dict[str, Any]:
     demo = [
-        {"team": "Argentina", "total_distance_km": 5340, "matches_count": 3},
-        {"team": "Brazil", "total_distance_km": 4980, "matches_count": 3},
-        {"team": "France", "total_distance_km": 4720, "matches_count": 3},
-        {"team": "United States", "total_distance_km": 4550, "matches_count": 3},
-        {"team": "Japan", "total_distance_km": 4210, "matches_count": 3},
+        {
+            "team": "Argentina",
+            "training_site": "Sporting KC Training Centre",
+            "total_distance_km": 5340,
+            "matches_count": 3,
+        },
+        {
+            "team": "Brazil",
+            "training_site": "Columbia Park Training Facility",
+            "total_distance_km": 4980,
+            "matches_count": 3,
+        },
+        {
+            "team": "France",
+            "training_site": "Bentley University",
+            "total_distance_km": 4720,
+            "matches_count": 3,
+        },
+        {
+            "team": "United States",
+            "training_site": "Great Park Sports Complex",
+            "total_distance_km": 4550,
+            "matches_count": 3,
+        },
+        {
+            "team": "Japan",
+            "training_site": "Nashville SC",
+            "total_distance_km": 4210,
+            "matches_count": 3,
+        },
     ]
     return build_payload(demo, group_stage_rows=0, origin_rows=0, dataset_type="demo")
 

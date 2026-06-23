@@ -8,11 +8,36 @@
       units: "km",
     },
     teams: [
-      { team: "Argentina", total_distance_km: 5340, matches_count: 3 },
-      { team: "Brazil", total_distance_km: 4980, matches_count: 3 },
-      { team: "France", total_distance_km: 4720, matches_count: 3 },
-      { team: "United States", total_distance_km: 4550, matches_count: 3 },
-      { team: "Japan", total_distance_km: 4210, matches_count: 3 },
+      {
+        team: "Argentina",
+        training_site: "Sporting KC Training Centre",
+        total_distance_km: 5340,
+        matches_count: 3,
+      },
+      {
+        team: "Brazil",
+        training_site: "Columbia Park Training Facility",
+        total_distance_km: 4980,
+        matches_count: 3,
+      },
+      {
+        team: "France",
+        training_site: "Bentley University",
+        total_distance_km: 4720,
+        matches_count: 3,
+      },
+      {
+        team: "United States",
+        training_site: "Great Park Sports Complex",
+        total_distance_km: 4550,
+        matches_count: 3,
+      },
+      {
+        team: "Japan",
+        training_site: "Nashville SC",
+        total_distance_km: 4210,
+        matches_count: 3,
+      },
     ],
   };
 
@@ -50,6 +75,7 @@
       const tr = document.createElement("tr");
       tr.innerHTML = `
         <td>${row.team}</td>
+        <td>${row.training_site ?? "Unknown"}</td>
         <td>${formatDistance(row.total_distance_km)}</td>
         <td>${row.matches_count ?? 3}</td>
       `;

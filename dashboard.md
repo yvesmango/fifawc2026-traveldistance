@@ -69,6 +69,7 @@ The chart ranks all 48 teams by total estimated group-stage air travel distance.
         <thead>
           <tr>
             <th>Team</th>
+            <th>Training Site</th>
             <th>Distance</th>
             <th>Matches</th>
           </tr>
@@ -82,7 +83,8 @@ The chart ranks all 48 teams by total estimated group-stage air travel distance.
     <p>
       Methodology: each team starts from its training site, which is mapped to the nearest commercial
       airport before distances are calculated against the nearest airport to each venue. Values are shown in
-      kilometers with miles in parentheses.
+      kilometers with miles in parentheses. The summary table includes the original training site used for
+      each team.
     </p>
   </footer>
 </div>
