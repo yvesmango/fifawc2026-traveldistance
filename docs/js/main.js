@@ -13,30 +13,35 @@
         team: "Argentina",
         training_site: "Sporting KC Training Centre",
         total_distance_km: 5340,
+        flight_time_equivalent_minutes: 356,
         matches_count: 3,
       },
       {
         team: "Brazil",
         training_site: "Columbia Park Training Facility",
         total_distance_km: 4980,
+        flight_time_equivalent_minutes: 332,
         matches_count: 3,
       },
       {
         team: "France",
         training_site: "Bentley University",
         total_distance_km: 4720,
+        flight_time_equivalent_minutes: 315,
         matches_count: 3,
       },
       {
         team: "United States",
         training_site: "Great Park Sports Complex",
         total_distance_km: 4550,
+        flight_time_equivalent_minutes: 303,
         matches_count: 3,
       },
       {
         team: "Japan",
         training_site: "Nashville SC",
         total_distance_km: 4210,
+        flight_time_equivalent_minutes: 281,
         matches_count: 3,
       },
     ],
@@ -63,8 +68,7 @@
     return window.TravelDistanceChart.formatDistance(value);
   }
 
-  function formatFlightTimeEquivalent(distanceKm) {
-    const totalMinutes = Math.round((distanceKm / FLIGHT_SPEED_KMH) * 60);
+  function formatFlightTimeEquivalent(totalMinutes) {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
     if (hours === 0) {
@@ -81,13 +85,15 @@
   function renderSummaryRows(dataset) {
     summaryBody.innerHTML = "";
     dataset.forEach((row, index) => {
+      const flightTimeMinutes =
+        row.flight_time_equivalent_minutes ?? Math.round((row.total_distance_km / FLIGHT_SPEED_KMH) * 60);
       const tr = document.createElement("tr");
       tr.innerHTML = `
         <td>${row.rank ?? index + 1}</td>
         <td>${row.team}</td>
         <td>${row.training_site ?? "Unknown"}</td>
         <td>${formatDistance(row.total_distance_km)}</td>
-        <td>${formatFlightTimeEquivalent(row.total_distance_km)}</td>
+        <td>${formatFlightTimeEquivalent(flightTimeMinutes)}</td>
       `;
       summaryBody.appendChild(tr);
     });
