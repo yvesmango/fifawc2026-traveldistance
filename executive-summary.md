@@ -36,7 +36,7 @@ The time-equivalent lens reveals a clear **"travel class"** divide:
 
 - **The Top Tier (1.5+ hours per match):** Teams like 🇨🇼 Curaçao, 🇦🇹 Austria, and 🇧🇦 Bosnia are spending over 90 minutes in the air per matchday. That's a significant recovery and preparation disadvantage.
 - **The Middle Tier (~1 hour per match):** The average team spends about 56 minutes in the air per match—comparable to a flight from Los Angeles to San Francisco.
-- **The Bottom Tier (under 20 minutes per match):** Teams like 🇲🇽 Mexico, 🇨🇮 Ivory Coast, and 🇸🇳 Senegal are essentially taking short regional hops, with travel times under 15 minutes.
+- **The Bottom Tier (under 20 minutes per match):** Teams like 🇲🇽 Mexico, 🇨🇮 Ivory Coast, and 🇸🇳 Senegal are essentially taking short regional commutes, with travel times under 15 minutes.
 
 This temporal disparity reflect a logistical reality that affects rest, recovery, and preparation. Teams spending 1.5+ hours in the air per match are arriving later, recovering slower, and potentially performing at a disadvantage compared to those that can bus to their venues or take a 10-minute hop. The ranking shows that geography still matters: teams with training bases and venues clustered nearby gain a real logistical advantage, while others absorb the cost of longer flight legs across North America. Kilometers remain the canonical unit for the analysis; miles are shown only as a secondary reference in the [dashboard](./dashboard.md).
 
