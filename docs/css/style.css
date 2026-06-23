@@ -164,6 +164,11 @@ body {
   margin-top: 18px;
 }
 
+.footer-note {
+  margin: 18px 0 0;
+  line-height: 1.6;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
