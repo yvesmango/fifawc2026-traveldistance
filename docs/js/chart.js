@@ -1,6 +1,66 @@
 (function () {
-  const BAR_COLOR = "#e4a96b";
-  const BAR_BORDER = "#c98b4b";
+  const BAR_COLOR = "#8fb4dc";
+  const BAR_BORDER = "#6f93bc";
+
+  const FLAG_BY_TEAM = {
+    Algeria: "🇩🇿",
+    Argentina: "🇦🇷",
+    Australia: "🇦🇺",
+    Austria: "🇦🇹",
+    Belgium: "🇧🇪",
+    Bosnia_and_Herzegovina: "🇧🇦",
+    Brazil: "🇧🇷",
+    Canada: "🇨🇦",
+    Cape_Verde: "🇨🇻",
+    Colombia: "🇨🇴",
+    Congo_DR: "🇨🇩",
+    Croatia: "🇭🇷",
+    Curaçao: "🇨🇼",
+    Czech_Republic: "🇨🇿",
+    Ecuador: "🇪🇨",
+    Egypt: "🇪🇬",
+    England: "🇬🇧",
+    France: "🇫🇷",
+    Germany: "🇩🇪",
+    Ghana: "🇬🇭",
+    Haiti: "🇭🇹",
+    IR_Iran: "🇮🇷",
+    Iraq: "🇮🇶",
+    Ivory_Coast: "🇨🇮",
+    Japan: "🇯🇵",
+    Jordan: "🇯🇴",
+    Mexico: "🇲🇽",
+    Morocco: "🇲🇦",
+    Netherlands: "🇳🇱",
+    New_Zealand: "🇳🇿",
+    Norway: "🇳🇴",
+    Panama: "🇵🇦",
+    Paraguay: "🇵🇾",
+    Portugal: "🇵🇹",
+    Qatar: "🇶🇦",
+    Saudi_Arabia: "🇸🇦",
+    Scotland: "🏴",
+    Senegal: "🇸🇳",
+    South_Africa: "🇿🇦",
+    South_Korea: "🇰🇷",
+    Spain: "🇪🇸",
+    Sweden: "🇸🇪",
+    Switzerland: "🇨🇭",
+    Tunisia: "🇹🇳",
+    Türkiye: "🇹🇷",
+    United_States: "🇺🇸",
+    Uruguay: "🇺🇾",
+    Uzbekistan: "🇺🇿",
+  };
+
+  function teamKey(team) {
+    return String(team).replace(/[\s-]+/g, "_");
+  }
+
+  function formatTeamLabel(team) {
+    const flag = FLAG_BY_TEAM[teamKey(team)] || "⚽";
+    return `${flag} ${team}`;
+  }
 
   function formatKilometers(value) {
     return new Intl.NumberFormat("en-US", {
@@ -22,7 +82,7 @@
     return {
       type: "bar",
       data: {
-        labels: dataset.map((item) => item.team),
+        labels: dataset.map((item) => formatTeamLabel(item.team)),
         datasets: [
           {
             label: "Total distance (km)",
