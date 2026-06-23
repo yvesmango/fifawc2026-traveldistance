@@ -8,7 +8,6 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .page-shell {
@@ -21,6 +20,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 24px 0 48px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+.dashboard-page * {
+  font-family: inherit !important;
 }
 
 .hero {
@@ -233,15 +237,11 @@ body {
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 960px) {
+  .meta-row,
   .content-grid,
+  .content-grid-2,
   .link-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 840px) {
-  .meta-row {
     grid-template-columns: 1fr;
   }
 
@@ -250,17 +250,25 @@ body {
   }
 
   .chart-wrap {
-    height: min(104vh, 1200px);
+    height: min(100vh, 1200px);
   }
 }
 
 @media (max-width: 640px) {
   .page-shell {
-    width: min(100% - 20px, 1120px);
-    padding-top: 16px;
+    width: min(100%, calc(100% - 24px));
+    padding-top: 24px;
+  }
+
+  .dashboard-page {
+    padding: 16px 0 40px;
+  }
+
+  .hero {
+    padding: 20px 0 18px;
   }
 
   .chart-wrap {
-    height: min(96vh, 980px);
+    height: min(88vh, 900px);
   }
 }
