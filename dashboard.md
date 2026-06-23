@@ -19,16 +19,34 @@ description: Interactive chart of estimated group-stage air travel distance by n
   the three match journeys calculated from a team&apos;s training site and the nearest venue airport.
 </p>
 
-<div class="page-shell dashboard-page">
+<div class="dashboard-page">
   <section class="hero">
     <div class="meta-row" aria-live="polite">
       <div class="meta-card">
         <span class="meta-label">Teams</span>
         <strong id="team-count">Loading</strong>
       </div>
-      <div class="meta-card">
+      <div class="meta-card meta-card-dataset">
         <span class="meta-label">Dataset</span>
         <strong id="dataset-status">Fetching JSON</strong>
+        <span class="meta-source">
+          Sources:
+          <a
+            href="https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Roadtrips schedule
+          </a>
+          and
+          <a
+            href="https://inside.fifa.com/organisation/media-releases/world-cup-2026-team-base-camps-tbc-48-nations-usa-mexico-canada"
+            target="_blank"
+            rel="noreferrer"
+          >
+            FIFA base camps
+          </a>
+        </span>
       </div>
       <div class="meta-card">
         <span class="meta-label">Updated</span>
@@ -46,10 +64,10 @@ description: Interactive chart of estimated group-stage air travel distance by n
           group-stage matches for each team. Miles are shown in parentheses for quick reference.
         </p>
       </div>
-      <div class="source-note">
-        Source: prepared Google Sheets exports, processed locally with Python
-      </div>
     </div>
+    <p class="source-note">
+      Source note: prepared Google Sheets exports, processed locally with Python
+    </p>
 
     <div id="loading-state" class="loading-state" role="status" aria-live="polite">
       <div class="spinner" aria-hidden="true"></div>

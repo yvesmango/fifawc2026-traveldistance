@@ -56,6 +56,12 @@ pre {
   padding: 32px 0 48px;
 }
 
+.dashboard-page {
+  width: min(1440px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
 .hero {
   padding: 28px 0 24px;
 }
@@ -147,6 +153,22 @@ h2 {
   font-size: 1.1rem;
 }
 
+.meta-card-dataset strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.meta-source {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.meta-source a {
+  font-weight: 700;
+}
+
 .panel {
   border-radius: 28px;
   padding: 24px;
@@ -158,6 +180,10 @@ h2 {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 20px;
+}
+
+.dashboard-page .panel-header {
+  display: block;
 }
 
 .panel-header p,
@@ -172,13 +198,15 @@ h2 {
 }
 
 .source-note {
+  margin: 0 0 16px;
   padding: 10px 14px;
   border-radius: 14px;
   background: rgba(23, 63, 95, 0.08);
   color: var(--accent);
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 40rem;
 }
 
 .loading-state,
@@ -221,7 +249,7 @@ h2 {
 
 .chart-wrap {
   position: relative;
-  height: min(96vh, 1180px);
+  height: min(110vh, 1380px);
 }
 
 .table-wrap {
@@ -449,7 +477,7 @@ h2 {
   }
 
   .chart-wrap {
-    height: min(88vh, 980px);
+    height: min(100vh, 1180px);
   }
 }
 
@@ -469,7 +497,7 @@ h2 {
   }
 
   .chart-wrap {
-    height: min(84vh, 860px);
+    height: min(92vh, 940px);
   }
 
   .summary-table {
