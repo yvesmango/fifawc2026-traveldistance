@@ -3,13 +3,13 @@ layout: default
 title: Dashboard | FIFA World Cup 2026 Travel Distance
 ---
 
-<link rel="stylesheet" href="./docs/css/style.css" />
+<link rel="stylesheet" href="{{ '/docs/css/style.css' | relative_url }}" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
-  window.TRAVEL_DISTANCE_DATA_URL = "./docs/data/travel_distances.json";
+  window.TRAVEL_DISTANCE_DATA_URL = "{{ '/docs/data/travel_distances.json' | relative_url }}";
 </script>
-<script src="./docs/js/chart.js" defer></script>
-<script src="./docs/js/main.js" defer></script>
+<script src="{{ '/docs/js/chart.js' | relative_url }}" defer></script>
+<script src="{{ '/docs/js/main.js' | relative_url }}" defer></script>
 
 <div class="dashboard-page">
   <section class="hero">
@@ -19,8 +19,7 @@ title: Dashboard | FIFA World Cup 2026 Travel Distance
         <strong id="team-count">Loading</strong>
       </div>
       <div class="meta-card meta-card-dataset">
-        <span class="meta-label">Dataset</span>
-        <strong>Source set</strong>
+        <span class="meta-label">Datasets</span>
         <span class="meta-source">
           Sources:
           <a
